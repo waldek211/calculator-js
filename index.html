@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+            <input type="text" name="" id="x" disabled="true">
+        </div>
+        <div class="operators">
+            <input type="button" value="AC" onclick="let display = document.getElementById('x')
+            display.value='0'">
+            <input type="button" value="+/-" onclick=" let display = document.getElementById('x')
+            display.value=display.value*(-1)">
+            <input type="button" value="%" onclick="let display = document.getElementById('x')
+            display.value+='%'" >
+            <input type="button" value="/" onclick="let display = document.getElementById('x')
+            display.value+='/'" id="orange">
+        </div>
+        <div class="numbers-1">
+            <input type="button" value="7" onclick="let display = document.getElementById('x')
+            display.value+='7'">
+            <input type="button" value="8" onclick="let display = document.getElementById('x')
+            display.value+='8'">
+            <input type="button" value="9" onclick="let display = document.getElementById('x')
+            display.value+='9'">
+            <input type="button" value="*" id="orn" onclick="let display = document.getElementById('x')
+            display.value+='*'">
+        </div>
+        <div class="numbers-2">
+            <input type="button" value="4" onclick="let display = document.getElementById('x')
+            display.value+='4'">
+            <input type="button" value="5" onclick="let display = document.getElementById('x')
+            display.value+='5'">
+            <input type="button" value="6" onclick="let display = document.getElementById('x')
+            display.value+='6'">
+            <input type="button" value="-" id="o" onclick="let display = document.getElementById('x')
+            display.value+='-'">
+        </div>
+        <div class="numbers-3">
+            <input type="button" value="1" onclick="let display = document.getElementById('x')
+            display.value+='1'">
+            <input type="button" value="2" onclick="let display = document.getElementById('x')
+            display.value+='2'">
+            <input type="button" value="3" onclick="let display = document.getElementById('x')
+            display.value+='3'">
+            <input type="button" value="+" id="ore" onclick="let display = document.getElementById('x')
+            display.value+='+'">
+        </div>
+        <div class="numbers-bottom">
+            <input type="button" id="double" value="0" onclick="let display = document.getElementById('x')
+            display.value+='0'">
+            <input type="button" value="." onclick="let display = document.getElementById('x')
+            display.value+='.'">
+            <input type="button" value="=" id="nge" onclick="
+            let display = document.getElementById('x')
+            display.value= eval(display.value)">
+        </div>
+        </div>
+        
+
+
+
+    </div>
+</body>
+</html>
